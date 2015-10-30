@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/transaction_product_photo"
+            android:layout_marginLeft="11dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_product_name"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/transaction_product_photo"
+            android:layout_toEndOf="@+id/transaction_product_photo"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_product_description"
+            android:textSize="14sp"
+            android:layout_alignTop="@+id/transaction_amount"
+            android:layout_alignLeft="@+id/transaction_product_name"
+            android:layout_alignStart="@+id/transaction_product_name"
+            android:layout_toLeftOf="@+id/card_date"
+            android:layout_toStartOf="@+id/card_date"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_date"
+            android:layout_above="@+id/transaction_amount"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            android:layout_marginRight="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/transaction_amount"
+            android:layout_gravity="right"
+            android:layout_below="@+id/transaction_product_name"
+            android:layout_alignRight="@+id/card_date"
+            android:layout_alignEnd="@+id/card_date"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

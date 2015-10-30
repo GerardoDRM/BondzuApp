@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/category_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/category_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/category_title"
+        android:layout_marginBottom="20dp" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/custom_products_grid"
+        android:layout_below="@+id/category_phrase"
+        android:layout_alignParentLeft="true"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="@dimen/product_grid_space"
+        android:verticalSpacing="@dimen/product_grid_space"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:columnWidth="100dp"
+        android:rowCount="2"
+        android:stretchMode="columnWidth"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:id="@+id/btn_more"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:minHeight="0dp"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/category_phrase"
+        android:layout_centerHorizontal="true"
+        android:typeface="sans"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Donations"
+        android:id="@+id/btn_donations"
+        android:layout_above="@+id/btn_more"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14sp"
+        android:background="@color/colorPrimary"
+        android:typeface="sans"
+        android:textAllCaps="false"
+        android:visibility="invisible"/>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bondzu.bondzuapp.ui.Catalogue">
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catalogue_grid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="@dimen/catalogue_grid_space"
+        android:verticalSpacing="@dimen/catalogue_grid_space"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:columnWidth="150dp"
+        android:stretchMode="columnWidth"/>
+
+</RelativeLayout>

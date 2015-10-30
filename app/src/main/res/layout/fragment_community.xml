@@ -1,0 +1,131 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bondzu.bondzuapp.ui.ProductDescription">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshCommunity">
+
+<android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewComments" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_btn_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        android:src="@drawable/ic_photo_library_white_24dp"
+        android:elevation="2dp"
+        app:backgroundTint="@color/btn_accept_amount"
+        app:rippleColor="@android:color/white"
+        android:layout_above="@+id/float_btn_write"
+        android:layout_alignRight="@+id/float_btn_comment"
+        android:layout_alignEnd="@+id/float_btn_comment"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+         />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_btn_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        android:src="@drawable/ic_mode_edit_white_24dp"
+        android:elevation="2dp"
+        app:backgroundTint="@color/btn_accept_amount"
+        app:rippleColor="@android:color/white"
+        android:layout_above="@+id/float_btn_comment"
+        android:layout_alignRight="@+id/float_btn_comment"
+        android:layout_alignEnd="@+id/float_btn_comment"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/float_btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_add_white_24dp"
+        app:layout_anchorGravity="bottom|right|end"
+        android:elevation="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/btn_accept_amount"
+        app:rippleColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/send_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:textColor="@android:color/white"
+            android:id="@+id/edit_comment"
+            />
+
+        <ImageView
+            android:id="@+id/photo_attached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo_library_white_24dp"
+            android:layout_weight="0"
+            android:visibility="gone"
+            />
+
+            <ImageView
+                android:id="@+id/close_coment"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_close_white_24dp"
+                android:layout_weight="0"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:visibility="visible"
+                />
+            <ImageView
+                android:id="@+id/send_comment"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_send_white_24dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="0"
+                android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+</RelativeLayout>

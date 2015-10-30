@@ -1,0 +1,228 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bondzu.bondzuapp.ui.CardDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/circle_progess" >
+        </ProgressBar>
+
+
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar"
+            android:padding="10dp"
+            android:text="@string/card_details_title"
+            android:textSize="24sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_card_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/card_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp">
+
+            <EditText
+                android:id="@+id/card_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_card_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/il_card_first_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/card_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/il_card_last_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_number"
+            android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/month_exp_date"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/il_card_number"
+            android:layout_marginLeft="10dp"
+            android:hint="MM"
+            android:maxLength="2"
+            android:inputType="date"
+            android:layout_marginTop="22dp" />
+
+        <EditText
+            android:id="@+id/year_exp_date"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/il_card_number"
+            android:layout_marginTop="22dp"
+            android:layout_toEndOf="@+id/month_exp_date"
+            android:hint="YY"
+            android:maxLength="2"
+            android:inputType="date"
+            android:layout_toRightOf="@+id/month_exp_date" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_card_cv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/il_card_number"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/il_card_amount"
+            android:layout_toStartOf="@+id/il_card_amount">
+
+        <EditText
+            android:id="@+id/card_cv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="4"
+            android:hint="@string/cv" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/il_card_amount"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/il_card_number"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/card_amount"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_amount"
+            android:inputType="number"
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/group_fixed_card_amount"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/il_card_number"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:id="@+id/label_fixed_amount"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_amount"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/fixed_card_amount"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_amount"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/label_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/il_card_number"
+            android:layout_marginLeft="10dp"
+            android:text="@string/exp_date" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/card_charge_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_chevron_right_white_24dp"
+            app:backgroundTint="@color/btn_accept_amount"
+            app:layout_anchorGravity="bottom|right|end"
+            app:rippleColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

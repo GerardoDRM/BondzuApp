@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/card_details_title"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/app_name"
+            android:gravity="center|left" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_card_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/card_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_card_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/il_card_first_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/card_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/il_card_last_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp">
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_number"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/month_exp_date"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/il_card_number"
+        android:layout_marginLeft="10dp"
+        android:hint="MM"
+        android:maxLength="2"
+        android:inputType="date"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/year_exp_date"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il_card_number"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/month_exp_date"
+        android:hint="YY"
+        android:maxLength="2"
+        android:inputType="date"
+        android:layout_toRightOf="@+id/month_exp_date" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/il_card_cv"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/il_card_number"
+        android:layout_marginTop="4dp">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/card_cv"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="4"
+        android:hint="@string/cv"
+        android:layout_alignTop="@+id/year_exp_date"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

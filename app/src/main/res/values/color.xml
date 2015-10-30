@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#c76b16</color>
+    <color name="colorPrimary">#DA7416</color>
+    <color name="windowBackground">#F4F4F4</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="colorAccent">#bdda7416</color>
+    <color name="navigationBarColor">#FFFFFF</color>
+    <color name="tabsScrollColor">#FFFFFF</color>
+    <color name="tabsTextColor">#A75A12</color>
+    <color name="gray">#e8aeaeae</color>
+
+    <!-- Products -->
+    <color name="status_bar_product_desc">#7DB041</color>
+    <color name="title_product">#8BC34A</color>
+    <color name="btn_car">#FF8F00</color>
+
+    <!--Card Details -->
+    <color name="btn_accept_amount">#00CB53</color>
+
+    <!-- Facebook -->
+    <color name="facebook">#0B5998</color>
+
+</resources>

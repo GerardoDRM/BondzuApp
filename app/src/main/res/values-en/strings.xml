@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">Bondzu</string>
+    <string name="title_activity_live_streaming">LiveStreamingActivity</string>
+    <string name="camera_title">Cámaras</string>
+    <string name="camera_error">It seems something is wrong with our cameras</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_adoptions</item>
+        <item>@string/nav_item_activity</item>
+        <item>@string/nav_item_payment</item>
+        <item>@string/nav_item_logout</item>
+
+    </string-array>
+
+    <string-array name="nav_drawer_imgs">
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_paw_black_24dp</item>
+        <item>@drawable/ic_activity_black_24dp</item>
+        <item>@drawable/ic_credit_card_black_24dp</item>
+        <item>@drawable/ic_logout_black_24dp</item>
+    </string-array>
+
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_adoptions">Adoptions</string>
+    <string name="nav_item_activity">Recent Activity</string>
+    <string name="nav_item_payment">Payments</string>
+    <string name="nav_item_logout">Logout</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="recommeded_price">Recommended amount for this product</string>
+    <string name="label_product_desc">I need this because...</string>
+    <string name="simple_error_title">!Oops it seems something is wrong</string>
+    <string name="products_error_message">!Oops we cannot get this product, try again</string>
+    <string name="card_details_title">Credit card details</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="card_number">Card number</string>
+    <string name="card_amount">Amount (mxn)</string>
+    <string name="cv">CV</string>
+    <string name="exp_date">Exp date.</string>
+    <string name="card_details_verification">Required fields are missing</string>
+    <string name="card_error_title">!Oops it seems something is wrong</string>
+    <string name="success">Success</string>
+    <string name="err_card_parse">An error has occurred during the payment transaction</string>
+    <string name="simple_error_message">An has occurred</string>
+    <string name="no_data">There\'s no data to display</string>
+    <string name="characteristics">Characteristics</string>
+    <string name="label_adopters">Adopters</string>
+    <string name="label_more">MORE</string>
+    <string name="go_live">GO LIVE</string>
+    <string name="keeper_label">Keeper</string>
+    <string name="thanks">Thank you for adopting me</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_events">There aren\'t events</string>
+    <string name="title_activity_independent_message">Comments</string>
+    <string name="title_activity_catalogue">Catalogue</string>
+
+    <!-- Login -->
+    <string name="title_activity_login">Login</string>
+    <string name="login_name">Login!</string>
+    <string name="login_error_message">Please make sure you enter an email and password</string>
+    <string name="login_error_title">Oops an Error has occurred</string>
+
+    <!-- Sign up -->
+    <string name="sign_up_btn">JOIN</string>
+    <string name="sign_up_error_message">Please make sure you enter a name, last name, password and email</string>
+    <string name="sign_up_error_title">Oops an Error has occurred</string>
+    <string name="facebook">JOIN USING FACEBOOK</string>
+    <string name="facebook_app_id">721077627906410</string>
+
+    <string name="go_login_message">Already have an account? Login in here</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_events">Events</string>
+    <string name="title_activity_adoptions">Adoptions</string>
+    <string name="title_activity_payment_history_acvity">Payments</string>
+    <string name="no_adoptions">There aren\'t adoptions</string>
+    <string name="no_history">There aren\'t payments</string>
+
+    <string name="title_activity_payment">Cards</string>
+    <string name="no_cards">There aren\'t cards</string>
+    <string name="title_activity_dialog_card">DialogCard</string>
+    <string name="new_card">New Card</string>
+    <string name="title_activity_complete_gifts">Gifts</string>
+
+    <!-- Youtube -->
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="add_calendar">ADD TO CALENDAR</string>
+    <string name="select_card">There\'s already a registered card</string>
+
+    <!--Card Errors -->
+    <string name="no_email_clients">There are no email clients installed.</string>
+    <string name="date_format">dd/MM/yyyy hh:mm</string>
+    <string name="about_title">ABOUT</string>
+    <string name="community_title">COMMUNITY</string>
+    <string name="gallery_title">GALLERY</string>
+    <string name="gifts_title">GIFTS</string>
+    <string name="adoption_message">"You've adopted "</string>
+    <string name="charge_description">"Gifts / Donations - "</string>
+
+    <string name="registered_card">This card already exists</string>
+    <string name="thanks_for_helping">Thanks for helping</string>
+    <string name="incomplete_charge">There was a problem with transaction</string>
+    <string name="incorrect_number">The card number is incorrect.</string>
+    <string name="invalid_number">The card number is not a valid credit card number</string>
+    <string name="invalid_expiry_month">The card\'s expiration month is invalid.</string>
+    <string name="invalid_expiry_year">The card\'s expiration year is invalid.</string>
+    <string name="invalid_cvc">The card\'s security code is invalid.</string>
+    <string name="expired_card">The card has expired.</string>
+    <string name="incorrect_cvc">The card\'s security code is incorrect.</string>
+    <string name="card_declined">The card was declined.</string>
+    <string name="processing_error">An error occurred while processing the card.</string>
+    <string name="default_card_error">An error occurred while processing the card.</string>
+
+    <string name="video">VIDEO</string>
+    <string name="facebook_cancel">Uh oh. The user cancelled the Facebook login.</string>
+    <string name="error_parsing_facebook">"Error parsing returned user data. "</string>
+    <string name="authentication_error">"Authentication error: "</string>
+    <string name="try_again_facebook">"Transient error. Try again. "</string>
+    <string name="other_facebook_error">"Some other error: "</string>
+    <string name="or">or</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="about_us_title">About Us</string>
+    <string name="reply_text">Reply</string>
+    <string name="report_text">Report</string>
+    <string name="sign_up_password">Password should be at least 5 characters</string>
+    <string name="no_internet">You don\'t have an internet connection</string>
+    <string name="no_wifi">Streaming uses a lot data, we recommend to turn on your WIFI</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_error">Enter your email</string>
+    <string name="forgot_success">Successfully sent link to your email for reset Password</string>
+    <string name="forgot_fail">Failed to sent link to your email for reset Password</string>
+    <string name="population">Population</string>
+
+    <!-- Resources Internationalization -->
+    <!-- Field Animal-->
+    <string name="KEY_ANIMALV2_NAME">name_en</string>
+    <string name="KEY_ANIMAL_ABOUT">about_en</string>
+    <string name="KEY_ANIMAL_CHARACTERISTICS">characteristics_en</string>
+    <string name="KEY_ANIMAL_SPECIES">species_en</string>
+    <!-- Field Products-->
+    <string name="KEY_PRODUCT_NAME">name_es</string>
+    <string name="KEY_PRODUCT_DESCRIPTION">description_en</string>
+    <string name="KEY_PRODUCT_INFO">info_en</string>
+    <string name="KEY_PRODUCT_INFO_AMOUNT">info_amount_en</string>
+    <string name="KEY_PRODUCT_CATEGORY">category_en</string>
+    <!-- Field Event-->
+    <string name="KEY_EVENT_TITLE">title_en</string>
+    <string name="KEY_EVENT_DESCRIPTION">description_en</string>
+    <!-- Field Video-->
+    <string name="KEY_VIDEO_TITLES">titles_en</string>
+    <string name="KEY_VIDEO_DESCRIPTIONS">descriptions_en</string>
+    <string name="title_privacy">Privacy Policy</string>
+    <string name="privacy_content">Check out our privacy policy and terms at www.bondzu.com</string>
+</resources>

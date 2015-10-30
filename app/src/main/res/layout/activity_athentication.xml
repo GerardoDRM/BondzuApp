@@ -1,0 +1,145 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.bondzu.bondzuapp.ui.SignUp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+        <ImageView
+            android:id="@+id/img_register"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/editTextLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/img_register"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="Name"
+                    android:textSize="14sp"
+                    android:textColorHint="@android:color/white"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/username"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="Last Name"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/input_lastname"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/emailField"
+                    android:hint="Email"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+
+                    android:hint="Password" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/sign_up_btn"
+                android:id="@+id/signupBtn"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/or"
+                android:gravity="center_vertical|center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/facebook"
+                android:id="@+id/facebook"
+                android:background="@color/facebook"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/go_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_login_message"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

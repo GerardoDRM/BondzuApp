@@ -1,0 +1,211 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bondzu.bondzuapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="app.bondzu.bondzu.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.bondzu.bondzuapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <meta-data android:name="com.parse.push.notification_icon" android:resource="@mipmap/logo_action"/>
+
+
+    <application
+        android:name="com.bondzu.bondzuapp.BondzuApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.LiveStreamingActivity"
+            android:label="@string/title_activity_live_streaming"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.AnimalProfile"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.AnimalProfile" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.AnimalProfile"
+            android:launchMode="singleTop"
+            android:theme="@style/Singup"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.ProductDescription"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.AnimalProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.AnimalProfile" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.CardDetailsActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.ProductDescription" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.ProductDescription" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.SignUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Singup" >
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.IndependentMessage"
+            android:label="@string/title_activity_independent_message"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.AnimalProfile"
+            android:theme="@style/Singup" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.AnimalProfile" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.ViewImageActivity"
+            >
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Singup" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.Home"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.EventsActivity"
+            android:label="@string/title_activity_events"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.AnimalProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.AnimalProfile" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.AdoptionsActivity"
+            android:label="@string/title_activity_adoptions"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.Home" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.PaymentHistoryAcvity"
+            android:label="@string/title_activity_payment_history_acvity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.Home" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.Home" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.CompleteGiftsActivity"
+            android:label="@string/title_activity_complete_gifts"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.AnimalProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.AnimalProfile" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.SingleViewActivity"
+            android:parentActivityName="com.bondzu.bondzuapp.ui.AnimalProfile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bondzu.bondzuapp.ui.AnimalProfile" />
+        </activity>
+        <activity
+            android:name="com.bondzu.bondzuapp.youtube.FullScreenActivity"
+            android:screenOrientation="sensor"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+            <meta-data android:name="isLaunchableActivity" android:value="true"/>
+        </activity>
+
+        <activity
+            android:name="com.bondzu.bondzuapp.ui.NativeCamera"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.bondzu.bondzuapp" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
